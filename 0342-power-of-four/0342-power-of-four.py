@@ -3,8 +3,10 @@ class Solution:
         
         if n <= 0:
             return False
-    
-    
-        x = math.log(n, 4)
-        return abs(x - round(x)) < 1e-10
-        
+
+    # Check if n is a power of two
+        if n & (n - 1) != 0:
+            return False
+
+    # Check if the only set bit is in an even position
+        return n & 0x55555555 == n
