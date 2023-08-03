@@ -1,5 +1,3 @@
-from typing import List
-
 class Solution:
     def countNegatives(self, grid: List[List[int]]) -> int:
         rows, cols = len(grid), len(grid[0])
