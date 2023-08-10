@@ -4,7 +4,6 @@ class Solution:
         if not root:
             return 0
         
-        # If the current node is a leaf node, return 1
         if not root.left and not root.right:
             return 1
         
