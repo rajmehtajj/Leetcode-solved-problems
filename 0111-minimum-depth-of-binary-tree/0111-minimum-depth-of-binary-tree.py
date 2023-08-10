@@ -1,4 +1,3 @@
-
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
         if not root:
@@ -15,6 +14,5 @@ class Solution:
         
         left_depth = self.minDepth(root.left)
         right_depth = self.minDepth(root.right)
-        
         return min(left_depth, right_depth) + 1
 
