@@ -15,5 +15,4 @@ class Solution:
             if abs(left_height - right_height) > 1:
                 return False
             return is_balanced_helper(node.left) and is_balanced_helper(node.right)
-        
         return is_balanced_helper(root)
