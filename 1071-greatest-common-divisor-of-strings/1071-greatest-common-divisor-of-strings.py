@@ -12,3 +12,4 @@ class Solution:
         divisor = str1[:divisor_length]
         
         return divisor
+
