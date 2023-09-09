@@ -13,14 +13,4 @@ class Solution:
             else:
                 right = mid - 1
 
-# Example usage:
-# Replace this function with the actual guess() function provided in your environment.
-def guess(num):
-    pick = 6  # Replace with the actual number you picked
-    if num < pick:
-        return 1
-    elif num > pick:
-        return -1
-    else:
-        return 0
 
