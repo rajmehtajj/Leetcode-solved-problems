@@ -1,16 +1,21 @@
-class Solution:
-    def guessNumber(self, n: int) -> int:
+
+class Solution(object):
+    def guessNumber(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
         left, right = 1, n
         
         while left <= right:
             mid = left + (right - left) // 2
             result = guess(mid)
-            
+
             if result == 0:
-                return mid
-            elif result == 1:
-                left = mid + 1
+                return mid  # Found the correct number
+            elif result == -1:
+                right = mid - 1  # The number is lower than the guess
             else:
-                right = mid - 1
+                left = mid + 1  # The number is higher than the guess
 
-
+        
